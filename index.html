@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070914">
+  <meta name="description" content="Explora el universo: agujeros negros, mundos lejanos y las ideas que cambiaron nuestra forma de mirar el cosmos.">
+  <title>Cosmos — una guía para explorar el universo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas class="starfield" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Cosmos, inicio"><span class="brand-mark">✳</span> COSMOS<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#agujeros-negros">Agujeros negros</a><a href="#mundos">Mundos habitables</a><a href="#inmensidad">El universo</a><a href="#ideas">Ideas &amp; científicos</a>
+    </nav>
+    <a class="nav-contact" href="#contacto">Hablemos <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> UNA VENTANA AL COSMOS</div>
+        <h1>El universo<br>está <span>más cerca</span><br>de lo que crees.</h1>
+        <p class="hero-text">Desde mundos que podrían albergar vida hasta agujeros negros que deforman el tiempo: una invitación a mirar más allá.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#agujeros-negros">Comienza a explorar <span>↗</span></a><a class="text-link" href="#inmensidad"><span class="play-icon">▶</span> Un universo de posibilidades</a></div>
+        <div class="hero-footnote"><span class="pulse"></span> EXPLORACIÓN PARA MENTES CURIOSAS <span class="footnote-star">✦</span> EDICIÓN 01</div>
+      </div>
+      <div class="hero-art" aria-label="Ilustración de un agujero negro y planetas" role="img">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="planet planet-blue"></div><div class="planet planet-small"></div><div class="planet planet-purple"></div>
+        <div class="black-hole"><div class="accretion"></div><div class="hole"></div><div class="lens"></div></div>
+        <div class="art-label label-top"><span>01 / 06</span><i></i> MILKY WAY</div><div class="art-label label-bottom"><i></i> EVENT HORIZON <span>∞</span></div>
+        <div class="art-caption">Una pequeña parte<br>de algo inmenso.</div>
+      </div>
+      <div class="hero-index">01 <span>—</span> 06</div>
+    </section>
+
+    <section class="intro section-wrap">
+      <div class="intro-kicker">PRIMERA PARADA <span>✦</span></div>
+      <div><h2>¿Qué es el <em>universo?</em></h2><p>Es todo lo que existe: el espacio, el tiempo, la materia y la energía. Estudiarlo nos ayuda a entender de dónde venimos, cómo funciona la naturaleza y qué lugar ocupamos en ella. Cada observación abre una pregunta nueva.</p></div>
+      <a class="round-link" href="#agujeros-negros" aria-label="Explorar el universo">↓</a>
+    </section>
+
+    <section class="feature section-wrap" id="agujeros-negros">
+      <div class="section-heading"><div class="eyebrow"><span class="eyebrow-line"></span> GRAVEDAD EXTREMA</div><span class="section-number">01 / FENÓMENOS</span></div>
+      <div class="feature-grid">
+        <div class="feature-visual blackhole-card"><div class="mini-stars"></div><div class="mini-ring"></div><div class="mini-hole"></div><span class="visual-tag">SAGITARIO A* <b>↗</b></span><span class="visual-note">4,3 millones de masas solares</span></div>
+        <div class="feature-copy"><h2>Donde el espacio<br><em>se curva.</em></h2><p>Un agujero negro es una región del espacio donde la gravedad es tan intensa que nada, ni siquiera la luz, puede escapar. Se forma cuando una gran cantidad de materia queda comprimida en un volumen diminuto.</p><p>Su límite se llama <strong>horizonte de sucesos</strong>: al cruzarlo, ya no hay regreso. Aunque no podemos ver el agujero en sí, detectamos cómo su gravedad afecta a las estrellas y al gas que lo rodea.</p><button class="inline-action" data-expand="blackhole-extra" aria-expanded="false">Descubre cómo los observamos <span>＋</span></button><div class="expand-content" id="blackhole-extra" hidden>En 2019, el Event Horizon Telescope publicó la primera imagen de la sombra de un agujero negro, en la galaxia M87. La imagen se construyó combinando observaciones de radiotelescopios repartidos por la Tierra.</div></div>
+      </div>
+    </section>
+
+    <section class="worlds section-wrap" id="mundos">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> ¿ESTAMOS SOLOS?</div><h2 class="section-title">Mundos <em>por descubrir.</em></h2></div><a class="text-link desktop-link" href="#contacto">Pregunta por un planeta <span>↗</span></a></div>
+      <p class="section-lede">No conocemos vida fuera de la Tierra, pero algunos exoplanetas podrían tener condiciones compatibles con agua líquida. Estos candidatos nos recuerdan cuánto queda por explorar.</p>
+      <div class="planet-grid">
+        <article class="planet-card"><div class="planet-image planet-kepler"><span class="planet-type">SISTEMA KEPLER-186</span><span class="planet-number">01</span></div><div class="planet-info"><h3>Kepler-186f</h3><p>Un mundo rocoso del tamaño aproximado de la Tierra, situado en la zona habitable de su estrella.</p><button class="more-button" data-fact="kepler">Explorar planeta <span>↗</span></button></div></article>
+        <article class="planet-card"><div class="planet-image planet-proxima"><span class="planet-type">SISTEMA ALFA CENTAURI</span><span class="planet-number">02</span></div><div class="planet-info"><h3>Próxima Centauri b</h3><p>Uno de nuestros vecinos planetarios más cercanos; orbita una estrella enana roja a poco más de 4 años luz.</p><button class="more-button" data-fact="proxima">Explorar planeta <span>↗</span></button></div></article>
+        <article class="planet-card"><div class="planet-image planet-trappist"><span class="planet-type">SISTEMA TRAPPIST-1</span><span class="planet-number">03</span></div><div class="planet-info"><h3>TRAPPIST-1e</h3><p>Un planeta rocoso de un sistema compacto. Su atmósfera y su posible agua siguen bajo estudio.</p><button class="more-button" data-fact="trappist">Explorar planeta <span>↗</span></button></div></article>
+      </div>
+      <p class="science-note">La “zona habitable” es una estimación basada en la distancia a una estrella. Estar en ella no confirma que un planeta tenga agua líquida ni vida.</p>
+    </section>
+
+    <section class="scale-section" id="inmensidad"><div class="scale-inner section-wrap"><div class="eyebrow"><span class="eyebrow-line"></span> CAMBIA TU PERSPECTIVA</div><h2>El espacio entre<br>las <em>estrellas.</em></h2><p>La luz viaja a casi 300.000 kilómetros por segundo. Aun así, necesita más de cuatro años para llegar desde la estrella más cercana al Sol. El cosmos no solo es grande: sus distancias desafían nuestra intuición.</p><div class="distance-widget"><div class="distance-top"><span>UN VIAJE A PRÓXIMA CENTAURI</span><span id="distance-value">4,2 años luz</span></div><input id="distance-slider" type="range" min="1" max="10" value="4" aria-label="Explora distancias en años luz"><div class="range-labels"><span>1 año luz</span><span>10 años luz</span></div><div class="distance-result" id="distance-result">La luz tardaría unos <strong>4 años</strong> en llegar.</div></div><div class="cosmic-stat"><span class="stat-big">2 <small>billones</small></span><span>de galaxias observables, según estimaciones<br>basadas en datos del telescopio Hubble.</span></div></div><div class="scale-decoration" aria-hidden="true"><div class="scale-orbit"></div><div class="scale-sun"></div><div class="scale-dot"></div><span>UN PUNTO EN LA OSCURIDAD</span></div></section>
+
+    <section class="ideas section-wrap" id="ideas"><div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> IDEAS QUE CAMBIARON TODO</div><h2 class="section-title">Mentes que <em>miraron lejos.</em></h2></div><span class="section-number">02 / PENSAMIENTO</span></div><div class="timeline">
+      <article class="timeline-item"><div class="timeline-date">1915 <span>FÍSICA</span></div><div class="timeline-marker">✦</div><div class="timeline-copy"><h3>Albert Einstein</h3><p>Su teoría de la relatividad general describe la gravedad como la curvatura del espacio y el tiempo. Predijo fenómenos como las ondas gravitacionales, detectadas un siglo después.</p><button class="inline-action theory-toggle" aria-expanded="false">Leer más <span>＋</span></button><div class="expand-content" hidden>La relatividad general también predice los agujeros negros. En 1919, observaciones de un eclipse solar ayudaron a confirmar que la gravedad desvía la luz de las estrellas.</div></div></article>
+      <article class="timeline-item"><div class="timeline-date">1974 <span>COSMOLOGÍA</span></div><div class="timeline-marker">✦</div><div class="timeline-copy"><h3>Stephen Hawking</h3><p>Propuso que los agujeros negros pueden emitir una tenue radiación debido a efectos cuánticos, hoy conocida como radiación de Hawking.</p><button class="inline-action theory-toggle" aria-expanded="false">Leer más <span>＋</span></button><div class="expand-content" hidden>Su trabajo conectó ideas de la gravedad, la mecánica cuántica y la termodinámica, y abrió preguntas profundas sobre la información en los agujeros negros.</div></div></article>
+      <article class="timeline-item"><div class="timeline-date">1929 <span>OBSERVACIÓN</span></div><div class="timeline-marker">✦</div><div class="timeline-copy"><h3>Edwin Hubble</h3><p>Observó que muchas galaxias se alejan de nosotros y que, en general, las más lejanas parecen alejarse más rápido: una evidencia clave de la expansión del universo.</p><button class="inline-action theory-toggle" aria-expanded="false">Leer más <span>＋</span></button><div class="expand-content" hidden>El universo en expansión es una de las bases observacionales del modelo del Big Bang. Georges Lemaître había propuesto antes una idea de universo en expansión.</div></div></article>
+    </div></section>
+
+    <section class="contact section-wrap" id="contacto"><div class="contact-copy"><div class="eyebrow"><span class="eyebrow-line"></span> SIGAMOS EXPLORANDO</div><h2>Tu curiosidad<br>es el <em>comienzo.</em></h2><p>¿Qué parte del universo te gustaría conocer mejor? Déjanos tu pregunta y el tema que te interesa.</p><div class="contact-decoration">✳ <span>EL COSMOS<br>TE ESPERA</span></div></div><form class="contact-form" id="contact-form"><label for="name">Tu nombre</label><input id="name" name="name" type="text" placeholder="¿Cómo te llamas?" required><label for="email">Correo electrónico</label><input id="email" name="email" type="email" placeholder="tu@correo.com" required><label for="topic">Me interesa aprender sobre</label><select id="topic" name="topic"><option>Agujeros negros</option><option>Planetas y exoplanetas</option><option>El universo y sus distancias</option><option>Teorías y científicos</option></select><label for="message">Tu pregunta <span>(opcional)</span></label><textarea id="message" name="message" rows="3" placeholder="Escribe tu pregunta aquí..."></textarea><button class="button button-primary form-submit" type="submit">Enviar mi curiosidad <span>↗</span></button><p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p><small>Formulario de demostración escolar. No se envían datos a un servidor.</small></form></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#inicio"><span class="brand-mark">✳</span> COSMOS<span class="brand-dot">.</span></a><span>Una guía para mentes curiosas <b>✦</b> 2026</span><a href="#inicio">Volver arriba ↑</a></footer>
+  <dialog class="fact-dialog" id="fact-dialog"><button class="dialog-close" aria-label="Cerrar">×</button><div class="eyebrow">FICHA DE EXPLORACIÓN</div><h2 id="dialog-title"></h2><p id="dialog-copy"></p><div class="dialog-foot">COSMOS <span>✦</span> MÁS ALLÁ DE LO CONOCIDO</div></dialog>
+</body>
+</html>
