@@ -86,10 +86,3 @@ function updateDistance() {
 }
 slider.addEventListener('input', updateDistance);
 
-document.getElementById('contact-form').addEventListener('submit', event => {
-  event.preventDefault();
-  const name = document.getElementById('name').value.trim();
-  const topic = document.getElementById('topic').value;
-  document.getElementById('form-feedback').textContent = `¡Gracias, ${name}! Tu interés por ${topic.toLowerCase()} quedó registrado en esta demostración.`;
-  event.currentTarget.reset();
-});
